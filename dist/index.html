@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 02 - Tailwind - Cards e Tabela</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <!-- cards da sharon -->
+    <section class="font-quicksand w-[95%] max-w-7xl min-h-dvh mx-auto p-8">
+        <h1 class="text-5xl text-center mb-6">
+            Eu sou a <span class="text-gray-900 font-black">Sharon</span>
+        </h1>
+
+        <!-- grid de cards -->
+        <main class="w-full flex flex-wrap justify-evenly">
+            <!--   1o. card   -->
+            <section class="border-2 rounded-sm p-2 flex flex-col gap-1 mt-5 w-full md:w-[45%] lg:w-[32%] group">
+                <img src="./images/sharon1.jpg" alt="Olá, eu sou a Sharon!!!" loading="lazy"
+                    class="rounded-sm w-full" />
+                <div class="flex flex-col gap-1">
+                    <h4 class="p-2 text-3xl font-medium text-gray-900">Sharon Linda</h4>
+                    <p class="p-2 mb-3 text-gray-700 line-clamp-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Excepturi, accusantium. Nemo velit?
+                    </p>
+                    <div class="grid grid-cols-2 p-2 text-lg group/icon">
+                        <div class="justify-self-start">
+                            <i class="fa-solid fa-calendar text-gray-600"></i>
+                            <span class="font-bold group-hover/icon:text-red-600">2.4 meses</span>
+                        </div>
+                        <div class="justify-self-end">
+                            <span class="font-bold group-hover/icon:text-red-600">Labrador</span>
+                            <i class="fa-solid fa-paw text-gray-600"></i>
+                        </div>
+                        <div class="justify-self-start">
+                            <i class="fa-solid fa-venus text-gray-600"></i>
+                            <span class="font-bold group-hover/icon:text-red-600">Menina</span>
+                        </div>
+                        <div class="justify-self-end">
+                            <span class="font-bold group-hover/icon:text-red-600">20 Kgs</span>
+                            <i class="fa-solid fa-weight-scale text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href=""
+                    class="block bg-gray-900 text-white text-center p-3 border-2 rounded-sm text-3xl group-hover:bg-sky-800 duration-500">Quero
+                    adotar</a>
+            </section>
+            <!-- Fim 1o. card -->
+
+            <!--   2o. card   -->
+            <section class="border-2 rounded-sm p-2 flex flex-col gap-1 mt-5 w-full md:w-[45%] lg:w-[32%] group">
+                <img src="./images/sharon2.jpg" alt="Olá, eu sou a Sharon!!!" loading="lazy"
+                    class="rounded-sm w-full" />
+                <div class="flex flex-col gap-1">
+                    <h4 class="p-2 text-3xl font-medium text-gray-900">Sharon Linda</h4>
+                    <p class="p-2 mb-3 text-gray-700 line-clamp-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Excepturi, accusantium. Nemo velit?
+                    </p>
+                    <div class="grid grid-cols-2 p-2 text-lg">
+                        <div class="justify-self-start">
+                            <i class="fa-solid fa-calendar text-gray-600"></i>
+                            <span class="font-bold">2.4 meses</span>
+                        </div>
+                        <div class="justify-self-end">
+                            <span class="font-bold">Labrador</span>
+                            <i class="fa-solid fa-paw text-gray-600"></i>
+                        </div>
+                        <div class="justify-self-start">
+                            <i class="fa-solid fa-venus text-gray-600"></i>
+                            <span class="font-bold">Menina</span>
+                        </div>
+                        <div class="justify-self-end">
+                            <span class="font-bold">20 Kgs</span>
+                            <i class="fa-solid fa-weight-scale text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href=""
+                    class="block bg-gray-900 text-white text-center p-3 border-2 rounded-sm text-3xl group-hover:bg-sky-800 duration-500">Quero
+                    adotar</a>
+            </section>
+            <!-- Fim 2o. card -->
+
+            <!--   3o. card   -->
+            <section class="border-2 rounded-sm p-2 flex flex-col gap-1 mt-5 w-full md:w-[45%] lg:w-[32%] group">
+                <img src="./images/sharon3.jpg" alt="Olá, eu sou a Sharon!!!" loading="lazy"
+                    class="rounded-sm w-full" />
+                <div class="flex flex-col gap-1">
+                    <h4 class="p-2 text-3xl font-medium text-gray-900">Sharon Linda</h4>
+                    <p class="p-2 mb-3 text-gray-700 line-clamp-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Excepturi, accusantium. Nemo velit?
+                    </p>
+                    <div class="grid grid-cols-2 p-2 text-lg">
+                        <div class="justify-self-start">
+                            <i class="fa-solid fa-calendar text-gray-600"></i>
+                            <span class="font-bold">2.4 meses</span>
+                        </div>
+                        <div class="justify-self-end">
+                            <span class="font-bold">Labrador</span>
+                            <i class="fa-solid fa-paw text-gray-600"></i>
+                        </div>
+                        <div class="justify-self-start">
+                            <i class="fa-solid fa-venus text-gray-600"></i>
+                            <span class="font-bold">Menina</span>
+                        </div>
+                        <div class="justify-self-end">
+                            <span class="font-bold">20 Kgs</span>
+                            <i class="fa-solid fa-weight-scale text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href=""
+                    class="block bg-gray-900 text-white text-center p-3 border-2 rounded-sm text-3xl group-hover:bg-sky-800 duration-500">Quero
+                    adotar</a>
+            </section>
+            <!-- Fim 3o. card -->
+        </main>
+
+        <!-- tabela -->
+      <h2 class="text-center text-4xl my-10 font-extrabold">
+        Informações dos Pets
+      </h2>
+      <div>
+        <!-- Cabeçalho da tabela -->
+        <table class="w-full">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Raça</th>
+              <th>Peso</th>
+              <th>Vacinas</th>
+              <th>Castrado</th>
+            </tr>
+          </thead>
+          <!-- Corpo da tabela - dados  -->
+          <tbody>
+            <tr>
+                <td>Bolt</td>
+                <td>3 anos</td>
+                <td>Labrador</td>
+                <td>24 Kgs</td>
+                <td>Sim</td>
+                <td>Sim</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </section>
+</body>
+
+</html>
