@@ -11,7 +11,7 @@
 <body>
     <!-- cards da sharon -->
     <section class="font-quicksand w-[95%] max-w-7xl min-h-dvh mx-auto p-8">
-        <h1 class="text-5xl text-center mb-6">
+        <h1 class="text-5xl text-center mb-6 animate-title">
             Eu sou a <span class="text-gray-900 font-black">Sharon</span>
         </h1>
 
@@ -124,38 +124,150 @@
         </main>
 
         <!-- tabela -->
-      <h2 class="text-center text-4xl my-10 font-extrabold">
-        Informações dos Pets
-      </h2>
-      <div>
-        <!-- Cabeçalho da tabela -->
-        <table class="w-full">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Idade</th>
-              <th>Raça</th>
-              <th>Peso</th>
-              <th>Vacinas</th>
-              <th>Castrado</th>
-            </tr>
-          </thead>
-          <!-- Corpo da tabela - dados  -->
-          <tbody>
-            <tr>
-                <td>Bolt</td>
-                <td>3 anos</td>
-                <td>Labrador</td>
-                <td>24 Kgs</td>
-                <td>Sim</td>
-                <td>Sim</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <h2 class="text-center text-4xl my-10 font-extrabold">
+            Informações dos Pets
+        </h2>
+        <div class="overflow-x-auto border-2 rounded-lg ">
+            <!-- Cabeçalho da tabela -->
+            <table class="w-full divide-y border-gray-200">
+                <thead class="bg-gray-900 text-white">
+                    <tr>
+                        <th class="min-w-28 px-4 py-3 text-center text-lg font-semibold">Nome</th>
+                        <th class="min-w-28 px-4 py-3 text-center text-lg font-semibold">Idade</th>
+                        <th class="min-w-28 px-4 py-3 text-center text-lg font-semibold">Raça</th>
+                        <th class="min-w-28 px-4 py-3 text-center text-lg font-semibold">Peso</th>
+                        <th class="min-w-28 px-4 py-3 text-center text-lg font-semibold">Vacinas</th>
+                        <th class="min-w-28 px-4 py-3 text-center text-lg font-semibold">Castrado</th>
+                    </tr>
+                </thead>
+                <!-- Corpo da tabela - dados  -->
+                <tbody class="divide-y divide-gray-300 text-gray-900 text-center">
+                    <tr class="hover:bg-gray-100 divide-gray-300">
+                        <td class="min-w-28 px-4 py-3">Bolt</td>
+                        <td class="min-w-28 px-4 py-3">3 anos</td>
+                        <td class="min-w-28 px-4 py-3">Labrador</td>
+                        <td class="min-w-28 px-4 py-3">24 Kg</td>
+                        <td class="min-w-28 px-4 py-3">Sim</td>
+                        <td class="min-w-28 px-4 py-3">Sim</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 divide-gray-300">
+                        <td class="min-w-28 px-4 py-3">Luna</td>
+                        <td class="min-w-28 px-4 py-3">1 anos</td>
+                        <td class="min-w-28 px-4 py-3">Golden</td>
+                        <td class="min-w-28 px-4 py-3">18 Kg</td>
+                        <td class="min-w-28 px-4 py-3">Sim</td>
+                        <td class="min-w-28 px-4 py-3">Não</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 divide-gray-300">
+                        <td class="min-w-28 px-4 py-3">Bolt</td>
+                        <td class="min-w-28 px-4 py-3">3 anos</td>
+                        <td class="min-w-28 px-4 py-3">Labrador</td>
+                        <td class="min-w-28 px-4 py-3">24 Kg</td>
+                        <td class="min-w-28 px-4 py-3">Sim</td>
+                        <td class="min-w-28 px-4 py-3">Sim</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 divide-gray-300">
+                        <td class="min-w-28 px-4 py-3">Luna</td>
+                        <td class="min-w-28 px-4 py-3">1 anos</td>
+                        <td class="min-w-28 px-4 py-3">Golden</td>
+                        <td class="min-w-28 px-4 py-3">18 Kg</td>
+                        <td class="min-w-28 px-4 py-3">Sim</td>
+                        <td class="min-w-28 px-4 py-3">Não</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
+    <section class="w-full bg-gray-200 py-8 px-20  dark:bg-gray-800 dark:text-gray-400">
+        <h3 class="text-4xl font-extralight mb-5">Colaboradores</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="group flex flex-col items-center justify-between gap-6 bg-gray-300 border rounded border-gray-400 p-6 text-center
+            dark:bg-gray-700">
+                <img src="./images/avatar.png" alt="Michio Kaku" class="size-20 rounded-full group-hover:translate-y-5 duration-500">
+                <h2 class="text-xl">Michio Kaku</h2>
+                <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt deleniti vero alias eum enim nam fuga, est inventore. Sit rem reiciendis hic quis similique minima architecto ipsum eius deserunt.</p>
+                <div>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                </div>
+            </div>
+            <div class="group flex flex-col items-center justify-between gap-6 bg-gray-300 border rounded border-gray-400 p-6 text-center
+            dark:bg-gray-700">
+                <img src="./images/avatar.png" alt="Michio Kaku" class="size-20 rounded-full group-hover:translate-y-5 duration-500">
+                <h2 class="text-xl">Michio Kaku</h2>
+                <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt deleniti vero alias eum enim nam fuga, est inventore. Sit rem reiciendis hic quis similique minima architecto ipsum eius deserunt.</p>
+                <div>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                </div>
+            </div>
+            <div class="group flex flex-col items-center justify-between gap-6 bg-gray-300 border rounded border-gray-400 p-6 text-center
+            dark:bg-gray-700">
+                <img src="./images/avatar.png" alt="Michio Kaku" class="size-20 rounded-full group-hover:translate-y-5 duration-500">
+                <h2 class="text-xl">Michio Kaku</h2>
+                <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt deleniti vero alias eum enim nam fuga, est inventore. Sit rem reiciendis hic quis similique minima architecto ipsum eius deserunt.</p>
+                <div>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                </div>
+            </div>
+            <div class="group flex flex-col items-center justify-between gap-6 bg-gray-300 border rounded border-gray-400 p-6 text-center
+            dark:bg-gray-700">
+                <img src="./images/avatar.png" alt="Michio Kaku" class="size-20 rounded-full group-hover:translate-y-5 duration-500">
+                <h2 class="text-xl">Michio Kaku</h2>
+                <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt deleniti vero alias eum enim nam fuga, est inventore. Sit rem reiciendis hic quis similique minima architecto ipsum eius deserunt.</p>
+                <div>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                </div>
+            </div>
+            <div class="group flex flex-col items-center justify-between gap-6 bg-gray-300 border rounded border-gray-400 p-6 text-center
+            dark:bg-gray-700">
+                <img src="./images/avatar.png" alt="Michio Kaku" class="size-20 rounded-full group-hover:translate-y-5 duration-500">
+                <h2 class="text-xl">Michio Kaku</h2>
+                <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt deleniti vero alias eum enim nam fuga, est inventore. Sit rem reiciendis hic quis similique minima architecto ipsum eius deserunt.</p>
+                <div>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                </div>
+            </div>
+            <div class="group flex flex-col items-center justify-between gap-6 bg-gray-300 border rounded border-gray-400 p-6 text-center
+            dark:bg-gray-700">
+                <img src="./images/avatar.png" alt="Michio Kaku" class="size-20 rounded-full group-hover:translate-y-5 duration-500">
+                <h2 class="text-xl">Michio Kaku</h2>
+                <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt deleniti vero alias eum enim nam fuga, est inventore. Sit rem reiciendis hic quis similique minima architecto ipsum eius deserunt.</p>
+                <div>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                    <span class="fa-solid fa-star text-gray-700 dark:text-gray-400"></span>
+                </div>
+            </div>
+        </div>
+
+        <button class="my-4 border rounded-md bg-blue-500 text-white py-2 px-4"
+        id="btn-theme">Light / Dark</button>
 
     </section>
+
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>

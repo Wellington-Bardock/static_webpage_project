@@ -7,4 +7,16 @@
     --font-quicksand: "Quicksand", sans-serif;
     --spacing-fiap: 1600px;
     --color-fiap: #dc143c;
+    --animate-title: title 2s
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes title {
+    0%{
+        transform: translateX(-1000px)
+    }
+    100%{
+        transform: translateX(0)
+    }
 }
